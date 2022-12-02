@@ -27,12 +27,11 @@ i = 0
 m = range(goods_amount)
 while i < goods_amount:
     for n in m:
-        my_dict = {"название": "", "цена": "", "количество": "", "ед": ""}
+        my_dict = {"название": "", "цена": "", "количество": "", "ед.": ""}
         my_dict["название"] = input(f'введите название {i + 1}-го товара: ')
         my_dict["цена"] = input(f'введите цену {i + 1}-го товара: ')
-        my_dict["количество"] = input(
-            f'введите количество {i + 1}-го товара: ')
-        my_dict["eд"] = input(f'введите единицы измерения {i + 1}-го товара: ')
+        my_dict["количество"] = input(f'введите количество {i + 1}-го товара: ')
+        my_dict["eд."] = input(f'введите единицы измерения {i + 1}-го товара: ')
         i += 1
         my_tuple = (i, my_dict)
         my_list.append(my_tuple)
@@ -43,12 +42,12 @@ for i in my_list:
 print(']')
 
 
-goods_analitics = {"название": [], "цена": [], "количество": [], "ед": []}
+goods_analitics = {"название": [], "цена": [], "количество": [], "ед.": []}
 for el in my_list:
     goods_analitics["название"].append(el[1]['название'])
     goods_analitics["цена"].append(el[1]['цена'])
     goods_analitics["количество"].append(el[1]['количество'])
-    goods_analitics["ед"].append(el[1]['ед'])
+    goods_analitics["ед."].append(el[1]['eд.'])
 print("АНАЛИТИКА ПО ТОВАРАМ: ")
 print('{')
 for i in goods_analitics:
