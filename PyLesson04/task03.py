@@ -6,4 +6,10 @@
 #     if el % 20 == 0 or el % 21 == 0:
 #         print(el)
 
-new_list = [print(el) for el in range(20, 241) if el % 20 == 0 or el % 21 == 0]
+# [print(el) for el in range(20, 241) if el % 20 == 0 or el % 21 == 0]
+
+# print(list.append(el) for el in range(20, 241) if el % 20 == 0 or el % 21 == 0)
+
+# print([el for el in range(20, 241) if el % 20 == 0 or el % 21 == 0])
+
+print(list([i for i in range(20, 241) if i % (20 or 21) == 0]))
