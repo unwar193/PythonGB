@@ -6,17 +6,8 @@
 Результат: [23, 1, 3, 10, 4, 11]"""
 
 my_list = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
-# new_list, duplicates = [], []
-# for value in my_list:
-#     if my_list.count(value) > 1 and value not in duplicates:
-#         duplicates.append(value)
-#
-# new_list_gen = [new_list.append(el) for el in my_list
-#                 if el not in duplicates]
-# print(new_list)
 
-new_list_2 = []
-new_list_gen_2 = [new_list_2.append(el) for el in my_list
+new_list_gen_2 = [el for el in my_list
                   if my_list.count(el) <= 1]
 
-print(new_list_2)
+print(new_list_gen_2)
