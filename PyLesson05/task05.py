@@ -15,7 +15,7 @@ with open('task05.txt', 'r', encoding='utf-8') as my_obj:
             res_sum += int(i)
 print(res_sum)
 
-'''Тот же код с вводом значений в файл через ф-ю "input"'''
+'''Тот же код с вводом значений в файл через ф-ю "input" пользователем'''
 # with open('task05.txt', 'w', encoding='utf-8') as my_obj:
 #     print(input('введите числа через пробел: '), file=my_obj)
 #
